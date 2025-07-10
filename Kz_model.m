@@ -44,7 +44,8 @@ good_titles(20);
 %% flux calc
 
 lambda_sec = 3.8217e-09;
-b = [-7.635e-06 -4.528e-06 -1.422e-06];
+% b = [-7.635e-06 -4.528e-06 -1.422e-06];
+b = -1.603e-6;
 Kh = (lambda_sec./b.^2)
 
 theta = 0.001975; % sin(0.113) in degrees

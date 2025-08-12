@@ -43,7 +43,7 @@ l = find(ADC_radium(:,6)==2);
 [Nx,Ny] = m_ll2xy(N18_lon,N18_lat);
 
 hold on;
-l2 = scatter(Nx,Ny,200,N18_Ra228,'^','filled','MarkerEdgeColor','k');
+% l2 = scatter(Nx,Ny,200,N18_Ra228,'^','filled','MarkerEdgeColor','k');
 l1 = scatter(x(l),y(l),200,ADC_radium(l,11),'o','filled','MarkerEdgeColor','k'); %Ra228
 % l4 = scatter(GTx,GTy,100,Ra228_bar,'v','filled','markeredgecolor','k');
 % l5 = scatter(PSx,PSy,120,PS94_surf(:,15)./10,'s','filled','markeredgecolor','k');
@@ -56,7 +56,7 @@ tt = colorbar;
 % caxis([0 10]);
 caxis([0 30]); % drag from 20 to 15, 0 to 2, 10 to 8
 set(get(tt,'ylabel'),'String','^{228}Ra (dpm 100L^{-1})','FontSize',20); % ^{228}Ra (dpm 100L^{-1})
-legend([l1 l2], {'Sept 2021' 'Sept 2018'}, 'location','southwest','fontsize',16);
+% legend([l1 l2], {'Sept 2021' 'Sept 2018'}, 'location','southwest','fontsize',16);
 
 % legend([l1 l2 l3], {'Arc 2018' 'NABOS 2018' 'LV77 2016'}, 'location','northeast','fontsize',16);
 % legend([l1 l2 l3 l4 l5], {'Arc Sep 2018' 'NABOS Sep 2018' 'LV77 Oct 2016' 'GN01 Aug-Oct 2015' 'GN04 Aug-Oct 2015'}, 'location','southwest','fontsize',16);
